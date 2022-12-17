@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "PT Serif";
+  src: url(../sources/fonts/PTSerif-Bold.ttf);
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url(../sources/fonts/PTSerif-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  box-sizing: border-box;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  font-family: "PT Serif";
+}
+
+.hat {
+}
+
+.title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #13436f;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
