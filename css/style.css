@@ -41,8 +41,8 @@ button {
 }
 
 section {
-  margin-left: 10.06%;
-  margin-right: 10.06%;
+  margin-left: 7.06%;
+  margin-right: 7.06%;
 }
 
 .title {
@@ -375,6 +375,11 @@ section {
   left: 45px;
 }
 
+.about-me-content {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
 .about-me-caption {
   font-style: normal;
   font-weight: 400;
@@ -404,6 +409,8 @@ section {
 
   display: flex;
   align-items: center;
+
+  white-space: nowrap;
 }
 
 .year::before {
@@ -476,7 +483,6 @@ section {
   font-weight: 400;
   font-size: 40px;
   line-height: 56px;
-  /* or 140% */
 
   text-align: center;
   letter-spacing: 0.01em;
@@ -563,7 +569,7 @@ section {
   display: flex;
   flex-direction: column;
   margin-top: auto;
-  padding: 0 10px;
+  padding: 0 30px 0 0;
 }
 
 .img-turn-last {
@@ -592,4 +598,405 @@ section {
 
   text-align: end;
   letter-spacing: 0.05em;
+}
+
+.reviews {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 54px;
+}
+
+.reviews-caption {
+  line-height: 88px;
+  background-image: url(/svg/pen.svg);
+  background-position: top 10px left 0px;
+
+  max-width: 265px;
+  padding-top: 0;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+
+.reviews-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.reviews-button-left {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #1a68c4;
+  background-color: #ffffff;
+  background-image: url(/svg/left-arrow-blue.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-right: 30px;
+}
+
+.reviews-button-right {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #1a68c4;
+  background-color: #1a68c4;
+  background-image: url(/svg/right-arrow-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-left: 30px;
+}
+
+.reviews-grid-container {
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "reviews-left reviews-right";
+}
+
+.reviews-left {
+  grid-area: reviews-left;
+  background-color: #605f5f;
+  background-image: url(/svg/pen-white.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 30px right 33px;
+  display: flex;
+  max-width: 695px;
+  padding: 50px;
+
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+}
+
+.reviews-right {
+  grid-area: reviews-right;
+  background-color: #d9d9d9;
+  background-image: url(/svg/pen-gray.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 30px right 33px;
+  display: flex;
+  max-width: 695px;
+  padding: 50px;
+
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+}
+
+.reviews-img-container {
+  padding-right: 50px;
+}
+
+.reviews-name-left {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+
+  padding-bottom: 25px;
+}
+
+.reviews-name-right {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+
+  letter-spacing: 0.05em;
+
+  color: #242424;
+
+  padding-bottom: 25px;
+}
+
+.reviews-text-left {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+.reviews-text-right {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.button-reviews {
+  margin: auto;
+  width: 300px;
+  height: 54px;
+}
+
+.quote-container-reviews {
+  border-top: 1px solid #13436f;
+  border-bottom: 1px solid #13436f;
+  margin-bottom: 45px;
+  background-image: url(/images/Rectangle\ 199.png);
+  background-repeat: no-repeat;
+  background-position: bottom 10px right -55px;
+}
+
+.quote-reviews-text-container {
+  max-width: 900px;
+  padding-bottom: 70px;
+}
+
+.quote-reviews-text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+  text-align: center;
+
+  padding-top: 70px;
+}
+
+.author-reviews {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: 0.05em;
+
+  color: #000000;
+
+  text-align: end;
+  padding-top: 10px;
+}
+
+.my-works {
+  background-image: url(/images/Rectangle166.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  margin: 0;
+
+  height: 784px;
+
+  position: relative;
+
+  margin-bottom: 80px;
+}
+
+.my-works-caption {
+  background-image: none;
+}
+
+.quote-my-works {
+  max-width: 500px;
+
+  position: absolute;
+  top: 108px;
+  right: 5.47%;
+}
+
+.quote-my-works-text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 28px;
+
+  text-align: center;
+  letter-spacing: 0.07em;
+
+  color: #242424;
+
+  max-width: 482px;
+}
+
+.author-my-works {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 46px;
+
+  text-align: center;
+  letter-spacing: 0.07em;
+
+  color: #242424;
+
+  text-align: end;
+}
+
+.comparison {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  letter-spacing: 0.05em;
+
+  color: #242424;
+
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #1a68c4;
+
+  width: 100px;
+  margin: auto;
+  margin-bottom: 45px;
+}
+
+.my-works-content {
+  display: flex;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4.24%;
+  margin-right: 2.05%;
+}
+
+.my-works-button-left {
+  margin: 0;
+  background-image: url(/svg/left-arrow-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1a68c4;
+
+  margin-bottom: 60px;
+}
+
+.my-works-button-right {
+  margin: 0;
+  background-image: url(/svg/right-arrow-blue.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}
+
+.teeth {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "teeth_1 teeth_2 teeth_3 teeth_4"
+    "teeth_5 teeth_6 teeth_7 teeth_8";
+}
+
+.teeth_1 {
+  grid-area: teeth_1;
+  filter: drop-shadow(7px 7px 10px rgba(58, 37, 5, 0.5));
+}
+
+.teeth_2 {
+  grid-area: teeth_2;
+  filter: drop-shadow(7px 7px 10px rgba(58, 37, 5, 0.5));
+}
+
+.teeth_3 {
+  grid-area: teeth_3;
+  filter: drop-shadow(7px 7px 10px rgba(58, 37, 5, 0.5));
+}
+
+.teeth_4 {
+  grid-area: teeth_4;
+  filter: drop-shadow(7px 7px 10px rgba(58, 37, 5, 0.5));
+}
+
+.teeth_5 {
+  grid-area: teeth_5;
+  filter: drop-shadow(7px 7px 10px rgba(58, 37, 5, 0.5));
+}
+
+.teeth_6 {
+  grid-area: teeth_6;
+  filter: drop-shadow(7px 7px 10px rgba(58, 37, 5, 0.5));
+}
+
+.teeth_7 {
+  grid-area: teeth_7;
+  filter: drop-shadow(7px 7px 10px rgba(58, 37, 5, 0.5));
+}
+
+.teeth_8 {
+  grid-area: teeth_8;
+  filter: drop-shadow(7px 7px 10px rgba(58, 37, 5, 0.5));
+}
+
+.certificates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+
+.certificates-container {
+  display: grid;
+  gap: 40px;
+  grid-template-areas:
+    "certificates-caption certificate_2"
+    "certificate_1 certificate_2";
+}
+
+.certificates-caption {
+  grid-area: certificates-caption;
+  background-image: url(/svg/parchment.svg);
+  background-position: left;
+
+  width: 460px;
+}
+
+.certificate_1 {
+  grid-area: certificate_1;
+  filter: drop-shadow(0px 10px 15px rgba(58, 37, 5, 0.5));
+}
+
+.certificate_2 {
+  grid-area: certificate_2;
+  filter: drop-shadow(0px 10px 15px rgba(58, 37, 5, 0.5));
+}
+
+.certificate_img {
+  width: 100%;
+  height: 100%;
+}
+
+.certificates-button-left {
+  background-image: url(/svg/left-arrow-blue.svg);
+  background-color: transparent;
+}
+
+.certificates-button-right {
+  background-image: url(/svg/right-arrow-white.svg);
+  background-color: #1a68c4;
+}
+
+.quote_certificates p {
+  max-width: 943px;
+  margin: auto;
+}
+
+.gradient-container {
+  background: linear-gradient(180deg, rgba(255, 254, 254, 0) 0%, #d9d9d9 100%);
+}
+
+.entry_caption {
+  max-width: 750px;
+  margin-top: 67px;
+  white-space: nowrap;
+  background-position: left top;
 }
