@@ -10,15 +10,46 @@
   </head>
   <body>
     <header class="hat">
-      <h1 class="title">врач стоматолог-ортопед</h1>
+      <h2 class="title">врач стоматолог-ортопед</h2>
       <div class="hat-main-information">
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="#">Обо мне</a></li>
+            <li><a class="menu__item" href="#">Услуги</a></li>
+            <li><a class="menu__item" href="#">Отзывы</a></li>
+            <li><a class="menu__item" href="#">Мои работы</a></li>
+            <li><a class="menu__item" href="#">Сертификаты</a></li>
+            <li><a class="menu__item" href="#">Обучение врачей</a></li>
+            <li><a class="menu__item" href="#">Контакты</a></li>
+            <li class="menu-link-messanger">
+              <a href="#" class="ref"
+                ><img src="/svg/icons8-twitter_filled@2x.svg" alt=""
+              /></a>
+            </li>
+            <li class="menu-link-messanger">
+              <a href="#" class="ref"
+                ><img src="/svg/icons8-youtube_play_filled@2x.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
         <div class="phone-email">
           <a href="tel:+79518608570" class="ref">+7 (951) 860-85-70</a>
           <a class="ref email" href="mailto:eliseew92@mail.ru"
             >eliseew92@mail.ru</a
           >
         </div>
-        <h2 class="title-name">Dr. Sergey Eliseev</h2>
+        <div class="title_name_profession">
+          <h1 class="title-name">Dr. Sergey Eliseev</h1>
+          <h2 class="profession_title">врач стоматолог-ортопед</h2>
+        </div>
+        <button class="button-services-mobile">
+          ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ
+        </button>
         <button class="button-services">Посмотреть услуги</button>
       </div>
       <nav class="menu">
@@ -70,7 +101,7 @@
           </ul>
           <button class="button-enroll">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
         </article>
-        <div class="image-container">
+        <div class="image-container image-container-head">
           <img class="big-img" src="/images/Rectangle 145.png" alt="" />
         </div>
       </div>
@@ -111,11 +142,11 @@
         </div>
       </nav>
 
-      <section class="guarantees">
+      <section class="guarantees wow fadeInLeft">
         <h2 class="guarantees-head">ЧТО ВЫ ГАРАНТИРОВАННО ПОЛУЧИТЕ</h2>
         <div class="guarantees-content">
           <div class="left-content">
-            <article class="guarantee wow fadeInLeft">
+            <article class="guarantee">
               <img class="img-number" src="/svg/01.svg" alt="" />
               <div class="description">
                 <h3 class="description-head">Диагностика</h3>
@@ -125,7 +156,7 @@
                 </p>
               </div>
             </article>
-            <article class="guarantee wow fadeInRight">
+            <article class="guarantee">
               <img class="img-number" src="/svg/02.svg" alt="" />
               <div class="description">
                 <h3 class="description-head">План лечения</h3>
@@ -140,7 +171,7 @@
                 </p>
               </div>
             </article>
-            <article class="guarantee wow fadeInLeft">
+            <article class="guarantee">
               <img class="img-number" src="/svg/03.svg" alt="" />
               <div class="description">
                 <h3 class="description-head">Современные технологии</h3>
@@ -155,7 +186,7 @@
             </article>
           </div>
           <div class="right-content">
-            <article class="guarantee wow fadeInRight">
+            <article class="guarantee">
               <img class="img-number" src="/svg/04.svg" alt="" />
               <div class="description">
                 <h3 class="description-head">Качество - дело принципа</h3>
@@ -167,7 +198,7 @@
                 </p>
               </div>
             </article>
-            <article class="guarantee wow fadeInLeft">
+            <article class="guarantee">
               <img class="img-number" src="/svg/05.svg" alt="" />
               <div class="description">
                 <h3 class="description-head">Лечение зубов под увеличением</h3>
@@ -180,7 +211,7 @@
                 </p>
               </div>
             </article>
-            <article class="guarantee wow fadeInRight">
+            <article class="guarantee">
               <img class="img-number" src="/svg/06.svg" alt="" />
               <div class="description">
                 <h3 class="description-head">Красивая улыбка</h3>
@@ -194,7 +225,7 @@
         </div>
       </section>
 
-      <section class="quote-container wow fadeInLeft">
+      <section class="quote-container">
         <p class="quote-text">
           Моим приоритетом является комплексная реабилитация зубочелюстной
           системы, лечение эстетическими реставрациями с опорой на естественные
@@ -202,10 +233,20 @@
           реставрациями с применением цифрового моделирования улыбки и прикуса
         </p>
       </section>
-      <section class="about-me wow fadeInRight">
+      <section class="about-me">
         <article class="about-me-container">
           <div class="about-me-image-container">
-            <img src="/images/Rectangle 158.png" alt="" />
+            <picture>
+              <source
+                media="(max-width: 1023px)"
+                srcset="/images/Rectangle 212.png"
+              />
+              <img
+                class="about-me-img"
+                src="/images/Rectangle 158.png"
+                alt=""
+              />
+            </picture>
           </div>
           <div class="about-me-content">
             <h2 class="about-me-caption">ОБО МНЕ</h2>
@@ -430,7 +471,7 @@
 
           <div class="image-container-turn">
             <img
-              class="turn-img"
+              class="turn-img turn-img-last"
               class="img-turn-last"
               src="/images/Rectangle 178.png"
               alt=""
@@ -447,13 +488,20 @@
         <h2 class="range-of-services-caption reviews-caption">ОТЗЫВЫ</h2>
         <div class="reviews-container">
           <div class="reviews-grid-container">
-            <article class="reviews-left">
+            <article class="review reviews-left">
               <div class="reviews-img-container">
                 <img src="/images/Ellipse27.png" alt="" />
               </div>
               <div class="reviews-content">
-                <h3 class="reviews-name-left">Анна Иванова</h3>
-                <p class="reviews-text-left">
+                <h3 class="reviews-name reviews-name-left">
+                  <img
+                    class="reviews-name-head-img"
+                    src="/images/Ellipse27.png"
+                    alt=""
+                  />
+                  Анна Иванова
+                </h3>
+                <p class="reviews-text reviews-text-left">
                   Добрый день! Мне 38 лет, начали разрушаться передние зубы
                   после вторых родов. Встал вопрос об установлении коронок.
                   Друзья посоветовали именно Сергея Отчество. Я переживала на
@@ -465,13 +513,19 @@
                 </p>
               </div>
             </article>
-            <article class="reviews-right">
+            <article class="review reviews-right">
               <div class="reviews-img-container">
                 <img src="/images/Ellipse28.png" alt="" />
               </div>
               <div class="reviews-content">
-                <h3 class="reviews-name-right">Анна Иванова</h3>
-                <p class="reviews-text-right">
+                <h3 class="reviews-name reviews-name-right">
+                  <img
+                    class="reviews-name-head-img"
+                    src="/images/Ellipse28.png"
+                    alt=""
+                  />Анна Иванова
+                </h3>
+                <p class="reviews-text reviews-text-right">
                   Добрый день! Мне 38 лет, начали разрушаться передние зубы
                   после вторых родов. Встал вопрос об установлении коронок.
                   Друзья посоветовали именно Сергея Отчество. Я переживала на
@@ -489,6 +543,8 @@
           <button class="reviews-button-left"></button>
           <button class="reviews-button-right"></button>
         </div>
+
+        <div class="button-container-mobile"></div>
         <button class="button-enroll button-reviews">Добавить отзыв</button>
       </section>
       <section class="quote-container-reviews wow fadeInUp">
