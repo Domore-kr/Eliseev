@@ -79,19 +79,25 @@
     <main class="page">
       <nav class="menu menu-page">
         <ul class="menu-list">
-          <li class="menu-link"><a href="#" class="ref ref-li">Обо мне</a></li>
-          <li class="menu-link"><a href="#" class="ref ref-li">Услуги</a></li>
-          <li class="menu-link"><a href="#" class="ref ref-li">Отзывы</a></li>
-          <li class="menu-link">
+          <li class="menu-link menu-link-posthead">
+            <a href="#" class="ref ref-li">Обо мне</a>
+          </li>
+          <li class="menu-link menu-link-posthead">
+            <a href="#" class="ref ref-li">Услуги</a>
+          </li>
+          <li class="menu-link menu-link-posthead">
+            <a href="#" class="ref ref-li">Отзывы</a>
+          </li>
+          <li class="menu-link menu-link-posthead">
             <a href="#" class="ref ref-li">Мои работы</a>
           </li>
-          <li class="menu-link">
+          <li class="menu-link menu-link-posthead">
             <a href="#" class="ref ref-li">Сертификаты</a>
           </li>
-          <li class="menu-link">
+          <li class="menu-link menu-link-posthead">
             <a href="#" class="ref ref-li">Обучение врачей</a>
           </li>
-          <li class="menu-link">
+          <li class="menu-link menu-link-posthead">
             <a href="#" class="ref ref-li">Контакты</a>
           </li>
         </ul>
@@ -99,7 +105,9 @@
           <a href="tel:+79518608570" class="ref menu-phone"
             >+7 (951) 860-85-70</a
           >
-          <button class="button-enroll">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+          <button class="button-enroll button-enroll-posthead">
+            ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ
+          </button>
         </div>
       </nav>
 
@@ -281,7 +289,7 @@
             </ul>
           </div>
           <div class="image-container-turn">
-            <img src="/images/Rectangle 160.png" alt="" />
+            <img class="turn-img" src="/images/Rectangle 160.png" alt="" />
           </div>
         </article>
         <article class="turn wow fadeInLeft">
@@ -308,7 +316,7 @@
           </div>
 
           <div class="image-container-turn">
-            <img src="/images/Rectangle 161.png" alt="" />
+            <img class="turn-img" src="/images/Rectangle 161.png" alt="" />
           </div>
         </article>
         <article class="turn wow fadeInRight">
@@ -330,7 +338,7 @@
             </ul>
           </div>
           <div class="image-container-turn">
-            <img src="/images/Rectangle 162.png" alt="" />
+            <img class="turn-img" src="/images/Rectangle 162.png" alt="" />
           </div>
         </article>
         <article class="turn wow fadeInLeft">
@@ -349,7 +357,7 @@
             </p>
           </div>
           <div class="image-container-turn">
-            <img src="/images/Rectangle 163.png" alt="" />
+            <img class="turn-img" src="/images/Rectangle 163.png" alt="" />
           </div>
         </article>
         <article class="turn wow fadeInRight">
@@ -384,7 +392,7 @@
             </ul>
           </div>
           <div class="image-container-turn">
-            <img src="/images/Rectangle 177.png" alt="" />
+            <img class="turn-img" src="/images/Rectangle 177.png" alt="" />
           </div>
         </article>
         <article class="turn wow fadeInLeft">
@@ -421,7 +429,12 @@
           </div>
 
           <div class="image-container-turn">
-            <img class="img-turn-last" src="/images/Rectangle 178.png" alt="" />
+            <img
+              class="turn-img"
+              class="img-turn-last"
+              src="/images/Rectangle 178.png"
+              alt=""
+            />
             <div class="quote-turn">
               <p>“Мысль о боли мучит нас не меньше самой боли”</p>
               <h3>Сенека</h3>
@@ -500,30 +513,30 @@
         <div class="my-works-container">
           <p class="comparison">До</p>
           <div class="my-works-content">
-            <div class="teeth">
-              <div class="teeth_1">
-                <img src="/images/Rectangle 171.png" alt="" />
+            <div class="teeth_container">
+              <div class="teeth teeth_1">
+                <img class="teeth_img" src="/images/Rectangle 171.png" alt="" />
               </div>
-              <div class="teeth_2">
-                <img src="/images/Rectangle 183.png" alt="" />
+              <div class="teeth teeth_2">
+                <img class="teeth_img" src="/images/Rectangle 183.png" alt="" />
               </div>
-              <div class="teeth_3">
-                <img src="/images/Rectangle 185.png" alt="" />
+              <div class="teeth teeth_3">
+                <img class="teeth_img" src="/images/Rectangle 185.png" alt="" />
               </div>
-              <div class="teeth_4">
-                <img src="/images/Rectangle 187.png" alt="" />
+              <div class="teeth teeth_4">
+                <img class="teeth_img" src="/images/Rectangle 187.png" alt="" />
               </div>
-              <div class="teeth_5">
-                <img src="/images/Rectangle 182.png" alt="" />
+              <div class="teeth teeth_5">
+                <img class="teeth_img" src="/images/Rectangle 182.png" alt="" />
               </div>
-              <div class="teeth_6">
-                <img src="/images/Rectangle 184.png" alt="" />
+              <div class="teeth teeth_6">
+                <img class="teeth_img" src="/images/Rectangle 184.png" alt="" />
               </div>
-              <div class="teeth_7">
-                <img src="/images/Rectangle 186.png" alt="" />
+              <div class="teeth teeth_7">
+                <img class="teeth_img" src="/images/Rectangle 186.png" alt="" />
               </div>
-              <div class="teeth_8">
-                <img src="/images/Rectangle 188.png" alt="" />
+              <div class="teeth teeth_8">
+                <img class="teeth_img" src="/images/Rectangle 188.png" alt="" />
               </div>
             </div>
             <p class="comparison">После</p>
@@ -610,34 +623,55 @@
           </h2>
           <div class="students_container">
             <div class="student_container">
-              <article class="stident_information">
+              <article class="student_information">
                 <h3 class="student_name">Иванов Иван Иванович</h3>
-                <p class="student_text">Здесь какой-то текст</p>
-                <button class="student-button">Записаться на обучение</button>
+                <p class="student_text">
+                  <img
+                    class="student_img"
+                    src="/images/student_one.png"
+                    alt=""
+                  />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Pariatur veniam omnis nobis, deleniti vitae accusamus sed
+                  aperiam praesentium a, alias quas sit, necessitatibus
+                  voluptates magnam. Eaque quos asperiores eum molestias?
+                </p>
               </article>
-              <div class="student_img_container">
-                <img src="/images/student_one.png" alt="" />
-              </div>
+              <button class="student-button">Записаться на обучение</button>
             </div>
             <div class="student_container">
-              <article class="stident_information">
+              <article class="student_information">
                 <h3 class="student_name">Петров Петр Петрович</h3>
-                <p class="student_text">Здесь какой-то текст</p>
-                <button class="student-button">Записаться на обучение</button>
+                <p class="student_text">
+                  <img
+                    class="student_img"
+                    src="/images/student_two.png"
+                    alt=""
+                  />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Pariatur veniam omnis nobis, deleniti vitae accusamus sed
+                  aperiam praesentium a, alias quas sit, necessitatibus
+                  voluptates magnam. Eaque quos asperiores eum molestias?
+                </p>
               </article>
-              <div class="student_img_container">
-                <img src="/images/student_two.png" alt="" />
-              </div>
+              <button class="student-button">Записаться на обучение</button>
             </div>
             <div class="student_container">
-              <article class="stident_information">
+              <article class="student_information">
                 <h3 class="student_name">Сидоров Сергей Александрович</h3>
-                <p class="student_text">Здесь какой-то текст</p>
-                <button class="student-button">Записаться на обучение</button>
+                <p class="student_text">
+                  <img
+                    class="student_img"
+                    src="/images/student_three.png"
+                    alt=""
+                  />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Pariatur veniam omnis nobis, deleniti vitae accusamus sed
+                  aperiam praesentium a, alias quas sit, necessitatibus
+                  voluptates magnam. Eaque quos asperiores eum molestias?
+                </p>
               </article>
-              <div class="student_img_container">
-                <img src="/images/student_three.png" alt="" />
-              </div>
+              <button class="student-button">Записаться на обучение</button>
             </div>
           </div>
           <div class="button-container button_container_student">
@@ -682,18 +716,18 @@
       </div>
       <div class="connection">
         <ul class="menu-list menu_list_foot">
-          <li class="menu-link">
+          <li class="menu-link menu_link_foot">
             <a href="#" class="ref ref-li ref_connection"
               >Ленинский проспект, 93 здание управы Левобережного района Клиника
               “Белая Ворона”</a
             >
           </li>
-          <li class="menu-link">
+          <li class="menu-link menu_link_foot">
             <a href="tel:+79518608570" class="ref ref-l ref_connection"
               >8-951-860-85-70</a
             >
           </li>
-          <li class="menu-link">
+          <li class="menu-link menu_link_foot">
             <a href="mailto:eliseew92@mail.ru" class="ref ref-li ref_connection"
               >eliseew92@mail.ru</a
             >
