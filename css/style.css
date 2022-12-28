@@ -1437,6 +1437,10 @@ form {
     width: 100%;
   }
 
+  .quote-reviews-text-container {
+    margin: auto;
+  }
+
   .reviews-img-container {
     padding-right: 10px;
   }
@@ -1968,13 +1972,15 @@ form {
     background-image: url(/images/Rectangle\ 178.png);
     background-position: center center;
     background-size: cover;
-    height: 152px;
+    min-height: 152px;
+    max-height: 400px;
     width: 100%;
 
     display: flex;
     flex-direction: column;
     align-items: end;
     padding-right: 20px;
+    margin-right: auto;
   }
 
   .quote-turn p {
@@ -2396,7 +2402,7 @@ form {
   }
 }
 
-@media (min-width: 560px) and (max-width: 1023) {
+@media (min-width: 560px) and (max-width: 1023px) {
   .student_text {
     font-size: 14px;
     line-height: 11px;
