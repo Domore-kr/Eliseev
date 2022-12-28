@@ -234,7 +234,7 @@ form {
 }
 
 .big-img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .button-enroll {
@@ -929,6 +929,10 @@ form {
   margin-left: 30px;
 }
 
+.my_works_quote {
+  display: none;
+}
+
 .teeth_container {
   display: grid;
   gap: 10px;
@@ -1521,6 +1525,7 @@ form {
   .hamburger-menu {
     display: block;
     width: 30px;
+    position: relative;
   }
 
   /* скрываем чекбокс */
@@ -1532,10 +1537,9 @@ form {
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center; /* центрируем содержимое кнопки */
     position: absolute;
-    top: 20px;
+    top: 50%;
     left: 10px;
     width: 26px;
-    height: 26px;
     cursor: pointer;
     z-index: 5;
   }
@@ -1680,10 +1684,10 @@ form {
 
   .hat-description {
     margin: 0;
-    background-image: url(/images/Rectangle\ 74.png);
-    background-size: contain;
+    background-image: url(/images/Rectangle\ 145.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-color: rgba(0, 0, 0, 0.5);
 
     padding-top: 0;
@@ -1987,6 +1991,10 @@ form {
     line-height: 6px;
   }
 
+  .reviews {
+    padding-bottom: 15px;
+  }
+
   .reviews-caption {
     padding-top: 0;
     padding-bottom: 10px;
@@ -1996,6 +2004,10 @@ form {
   .reviews-grid-container {
     grid-template-columns: 100%;
     /* grid-template-areas: "reviews-right"; */
+  }
+
+  .reviews-container {
+    margin-bottom: 10px;
   }
 
   .reviews-left {
@@ -2051,9 +2063,294 @@ form {
 
   .button-container-mobile {
     display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+
+  .mobile_button {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(1, 72, 137, 0.5);
+  }
+
+  .mobile_button_first {
+    background-color: #014889;
+  }
+
+  .mobile_button:nth-last-child(n + 2) {
+    margin-right: 15px;
   }
 
   .button-reviews {
     display: flex;
+    max-width: 105px;
+    max-height: 20px;
+
+    font-size: 8px;
+    line-height: 24px;
+
+    padding: 10px;
+  }
+
+  .quote-container-reviews {
+    background-image: none;
+    margin-bottom: 10px;
+  }
+
+  .quote-reviews-text-container {
+    padding-bottom: 10px;
+  }
+
+  .quote-reviews-text {
+    font-size: 8px;
+    line-height: 10px;
+
+    padding-top: 10px;
+  }
+
+  .author-reviews {
+    font-size: 6px;
+    line-height: 6px;
+  }
+
+  .my-works {
+    margin-bottom: 10px;
+  }
+
+  .my-works-caption {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+
+  .quote-my-works {
+    display: none;
+  }
+
+  .comparison {
+    display: none;
+  }
+
+  .teeth_container {
+    grid-auto-rows: minmax(auto, auto);
+    grid-auto-columns: minmax(auto, auto);
+    grid-template-areas:
+      " teeth_2 teeth_3 "
+      " teeth_6 teeth_7 ";
+    margin-bottom: 10px;
+  }
+
+  .teeth {
+    max-width: 100px;
+  }
+
+  .teeth_img {
+    max-width: 100%;
+  }
+
+  .teeth_1,
+  .teeth_4,
+  .teeth_5,
+  .teeth_8 {
+    display: none;
+  }
+
+  .my_works_quote {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #13436f;
+    border-bottom: 1px solid #13436f;
+    margin-bottom: 10px;
+  }
+  .my_works_quote_text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+
+    text-align: center;
+    letter-spacing: 0.07em;
+  }
+
+  .my_works_quote_author {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 6px;
+
+    text-align: end;
+    letter-spacing: 0.07em;
+  }
+
+  .certificates {
+    margin: 0;
+
+    background-image: url(/svg/parchment.svg);
+    background-repeat: no-repeat;
+    background-size: 80px 70px;
+    background-position: left 25px top 0;
+
+    padding-bottom: 0;
+  }
+
+  .certificates-container {
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "certificates-caption certificate_2"
+      "certificate_1 certificate_2"
+      "button-container-mobile certificate_2";
+
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      #d2e1f3 100%
+    );
+
+    margin-bottom: 0;
+  }
+
+  .certificates-caption {
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  .certificate_1 {
+    filter: drop-shadow(0px 2px 3px rgba(58, 37, 5, 0.5));
+  }
+
+  .certificate_2 {
+    filter: drop-shadow(0px 2px 3px rgba(58, 37, 5, 0.5));
+  }
+
+  .certificate_img_one {
+    opacity: 0.8;
+  }
+
+  .quote_certificates {
+    margin: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(26, 104, 196, 0.2) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  .entry {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .entry_image_container {
+    display: none;
+  }
+
+  .form_to_fill {
+    padding: 0;
+
+    font-size: 8px;
+    line-height: 8px;
+
+    color: rgba(0, 0, 0, 0.4);
+
+    margin: auto;
+  }
+
+  .entry_caption {
+    width: auto;
+  }
+
+  .select_button {
+    display: none;
+  }
+
+  input {
+    margin-bottom: 15px;
+
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  .form_button {
+    display: flex;
+    margin: 15px auto;
+    padding: 0;
+    width: 100px;
+    height: 20px;
+
+    font-size: 8px;
+    line-height: 24px;
+  }
+
+  .education {
+    margin: 0 15px;
+  }
+
+  .education_caption {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .students_container {
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .student_information {
+    padding: 5px;
+    margin-bottom: 30px;
+  }
+
+  .student_name {
+    font-size: 6px;
+    line-height: 6px;
+  }
+
+  .student_text {
+    font-size: 6px;
+    line-height: 6px;
+  }
+
+  .student_container_three {
+    display: none;
+  }
+
+  .student-button {
+    height: 13px;
+
+    font-size: 4px;
+    line-height: 4px;
+
+    bottom: 5px;
+    left: 5px;
+  }
+
+  .foot {
+    background: linear-gradient(180deg, #d8d8d8 0%, #ffffff 65.1%);
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .foot_name_container {
+    padding-bottom: 10px;
+    padding-right: 0;
+  }
+
+  .map_container {
+    display: none;
+  }
+
+  .foot_menu {
+    padding-right: 0;
+  }
+
+  .menu_list_foot {
+    text-align: center;
+  }
+
+  .ref_connection {
+    justify-content: center;
   }
 }
