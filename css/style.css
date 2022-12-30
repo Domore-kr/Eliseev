@@ -1957,7 +1957,7 @@ form {
 
     letter-spacing: 0.02em;
 
-    padding-left: 15px;
+    padding-left: 20px;
   }
 
   .img-number-turn {
@@ -2402,7 +2402,7 @@ form {
   }
 }
 
-@media (min-width: 560px) and (max-width: 1023px) {
+@media (min-width: 560px) and (max-width: 767px) {
   .student_text {
     font-size: 14px;
     line-height: 11px;
@@ -2465,5 +2465,170 @@ form {
     font-size: 14px;
     line-height: 20px;
     max-width: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .title-name {
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .profession_title {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .button-services-mobile {
+    font-size: 20px;
+  }
+
+  .my_works_quote_text,
+  .my_works_quote_author,
+  .quote-reviews-text,
+  .author-reviews,
+  .reviews-text,
+  .quote-turn p,
+  .quote-turn h3,
+  .quote-text,
+  .quote,
+  .services-list {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .quote {
+    padding-top: 20px;
+  }
+
+  .hat-description {
+    height: 450px;
+  }
+
+  .guarantees-head,
+  .range-of-services-caption {
+    font-size: 30px;
+    line-height: 35px;
+    padding-bottom: 25px;
+  }
+
+  .description-head,
+  .turn-caption {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .description-text,
+  .turn-description,
+  .turn-content ul {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+  }
+
+  .about-me-caption {
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  .year {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .description-for-me,
+  .description-bold::before {
+    font-size: 18px;
+    line-height: 20px;
+    max-width: none;
+  }
+
+  .quote-about-me p,
+  .quote-about-me h3 {
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 20px;
+  }
+
+  .quote-turn {
+    height: 900px;
+    min-width: 100%;
+  }
+
+  .quote-turn {
+    padding-right: 10%;
+    padding-top: 3%;
+  }
+
+  .turn-content,
+  .turn-description {
+    max-width: none;
+  }
+
+  .reviews-left {
+    padding: 30px;
+  }
+
+  .reviews-name {
+    font-size: 30px;
+    line-height: 24px;
+  }
+
+  .reviews-name-head-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .review {
+    padding: 50px;
+    background-size: 30px 30px;
+    background-position: bottom 10px right 10px;
+  }
+
+  .teeth {
+    max-width: none;
+  }
+
+  input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .form_to_fill {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .form_button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .education_caption {
+    margin: auto;
+  }
+
+  .student_name {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .student_information {
+    padding: 15px;
+  }
+
+  .student_text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .student-button {
+    height: 40px;
+    font-size: 12px;
+    line-height: 24px;
+    bottom: 10px;
+    left: 10px;
   }
 }
