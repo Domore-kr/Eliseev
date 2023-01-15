@@ -132,6 +132,11 @@ form {
   cursor: pointer;
 }
 
+.button-services:hover {
+  background: #014889;
+  color: #ffffff;
+}
+
 .button-services-mobile {
   display: none;
 }
@@ -260,7 +265,9 @@ form {
   color: #ffffff;
 }
 
-.page {
+.button-enroll:hover {
+  background: #ffffff;
+  color: #000000;
 }
 
 .menu-page {
@@ -1235,6 +1242,11 @@ form {
   left: 20px;
 }
 
+.student-button:hover {
+  background: #1a68c4;
+  color: #ffffff;
+}
+
 .student_img {
   width: 50%;
   float: right;
@@ -1351,8 +1363,8 @@ form {
   color: #242424;
 }
 
-.menu_link_foot:nth-last-child(n + 2) {
-  margin: 0;
+.ref_foot:hover {
+  border: none;
 }
 
 .ref_connection {
@@ -1510,6 +1522,10 @@ form {
 }
 
 @media (max-width: 1023px) {
+  .menu_link_foot:nth-last-child(n + 2) {
+    margin-right: 0;
+  }
+
   section {
     margin-right: 15px;
     margin-left: 15px;
